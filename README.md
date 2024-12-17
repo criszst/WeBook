@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img  style="width: 70%; height: 50%" align="center" src="https://github.com/user-attachments/assets/09a0a5af-4adc-412f-b0e4-5f9cb16acef0" />
 
-## Getting Started
+</div>
+<br />
 
-First, run the development server:
+<div align="center">
+  <img style="width: 70%; height: 50%" align="center" src="https://github.com/user-attachments/assets/020daf3b-9d54-4b35-a093-2aa004b04425"/>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## WEBBOOKS
+I doing this site for hobby and study about TypeScript and its uses.
+I'm not really expecting finish this project in less than 6 months, but'il try 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## OBJECTIVES
+  - Finish the home page (home page has just a h1, for god sake.......)
+  - Finish the Book Detail page
+  - A page for login, what uses SQL and create the user data
+  - Using this user data to save somo favorites books and return recommendations
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## INFRASTRUCTURE 
+  - TypeScript
+  - NodeJs
+  - React
+  - EJS
+  - MVC Architecture
