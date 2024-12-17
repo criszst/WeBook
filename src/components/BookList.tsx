@@ -17,6 +17,7 @@ const BookList: React.FC<{ book: Book; }> = ({ book }) => {
           alt={`Capa do livro: ${book.volumeInfo.title}`}  // Adicionando uma descrição no atributo alt
           width={300}  // Defina a largura desejada
           height={520} // Defina a altura desejada
+          loading="lazy"
         />
         
                   </a>

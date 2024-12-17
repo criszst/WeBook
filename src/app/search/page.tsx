@@ -1,7 +1,7 @@
 "use client"; 
 
-import "../styles/style.css";
-import "../styles/sideBar.css";
+
+import "../styles/globals.css";
 import "../styles/dropdown.css";
 import "../styles/inputList.css";
 import "../styles/card.css";
@@ -49,7 +49,7 @@ const Search: React.FC = () => {
   }, []);
 
   return (
-    <section>
+    <section className="bg-mainColorBook">
       <Form query={query} />
       <div className="container py-4">
         <h1 className="h1 text-center" id="pageHeaderTitle">

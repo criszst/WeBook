@@ -12,9 +12,10 @@ import "../../styles/style.css";
 import "../../styles/sideBar.css";
 import "../../styles/dropdown.css";
 import "../../styles/inputList.css";
-import "../../styles/card.css";
+
 import '../../styles/Book/Detail/BackgroundCover.css';
 import '../../styles/Book/Detail/BookInfo.css';
+import Link from "next/link";
 
 
 
@@ -24,7 +25,7 @@ const BookDetails: React.FC = () => {
     const id = params.id;
 
     useEffect(() => {
-        const fectchBookID = async () => {
+        const fetchBookID = async () => {
             const book = await getBookById(id);
 
             setBook(book)
@@ -32,7 +33,7 @@ const BookDetails: React.FC = () => {
         }
 
         if (id) {
-            fectchBookID();
+            fetchBookID();
         }
     }, [id]);
 
@@ -133,9 +134,9 @@ const BookDetails: React.FC = () => {
                       book.volumeInfo.categories[0].split('/').map((category, index) => {
                         const categoryClean = category.trim().toLowerCase();
                         return (
-                          <a key={index} href={`/book/categories/${categoryClean}`}>
+                          <Link key={index} href={`/categories/${categoryClean}`}>
                             <span className="badge chip">{category}</span>
-                          </a>
+                          </Link>
                         );
                       })}
                     </div>
