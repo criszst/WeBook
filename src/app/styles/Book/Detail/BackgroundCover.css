@@ -1,0 +1,95 @@
+.row {
+    --bs-gutter-x: 0 !important;
+}
+
+.sectionDetail {
+    flex-direction: column;
+    height: 510px !important;
+    padding: 30px 0;
+}
+
+.divImg {
+    z-index: 10;
+}
+
+.headerInfo {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 auto;
+    height: 100%;
+}
+
+.backgroundCover {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+.backgroundCover img {
+    background: -webkit-gradient(linear, left top, right top, from(#fc0), to(#f9a700));
+    background: linear-gradient(90deg, #fc0, #f9a700);
+    margin: -35%;
+    height: 200%;
+    width: 200%;
+    object-fit: cover;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+}
+
+.transparencyEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #121212;
+    opacity: .7;
+}
+
+.bookCoverImage {
+    z-index: 10;
+    flex: 0 0 298px;
+    height: 100%;
+    max-height: 100%;
+    margin-right: 70px;
+    background: transparent;
+}
+
+.fixedImg {
+    position: relative;
+    z-index: 10;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 258px;
+    flex: 0 0 258px;
+    height: 100%;
+    max-height: 100%;
+    margin-right: 20px;
+ 
+    left: 60;
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, .6);
+    background: transparent;
+
+}
+
+
+
+.cover {
+    width: 100%;
+    height: 100%;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    border-radius: 10px;
+}
