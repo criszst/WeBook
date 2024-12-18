@@ -2,12 +2,16 @@
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation"
-import { getBookById } from '../../../services/GoogleBookService';
 
 import Image from "next/image";
+import Link from "next/link";
+
 
 import Book from '../../../interfaces/IBook';
+import { getBookById } from '../../../services/GoogleBookService';
 
+
+import "../../styles/globals.css";
 import "../../styles/style.css";
 import "../../styles/sideBar.css";
 import "../../styles/dropdown.css";
@@ -15,7 +19,6 @@ import "../../styles/inputList.css";
 
 import '../../styles/Book/Detail/BackgroundCover.css';
 import '../../styles/Book/Detail/BookInfo.css';
-import Link from "next/link";
 
 
 
@@ -56,10 +59,11 @@ const BookDetails: React.FC = () => {
                     <figure className="cover">
                       
                       <Image
-                        className="img-fluid"
                         src={`https://books.google.com/books/publisher/content/images/frontcover/${book.id}?fife=w400-h600&source=gbs_api`}
                         alt="Capa do livro"
-                        width={500}
+                        layout="responsive"
+                        style={{ objectFit: 'cover' }}
+                        width={300}
                         height={400}
                         priority={true}
                       />
@@ -96,8 +100,7 @@ const BookDetails: React.FC = () => {
                         <h6 className="fw-bold mb-0" style={{ marginLeft: '-8px !important' }}>
                           <span>
                             <i className="fas fa-money-check-dollar mb-2"></i>
-                            R$ {book.saleInfo.retailPrice?.amount === undefined 
-                                ? 'Sem Preço' : book.saleInfo.retailPrice?.amount}
+                            R$ {(book.saleInfo.retailPrice?.amount as number) ?? 'Sem Preço'}
                           </span>
                         </h6>
 

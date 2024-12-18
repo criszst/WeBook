@@ -14,9 +14,9 @@ const BookList: React.FC<{ book: Book; }> = ({ book }) => {
           className="postcard__img"
           style={{ maxHeight: "100%" }}
           src={`https://books.google.com/books/publisher/content/images/frontcover/${book.id}?fife=w400-h600&source=gbs_api`}
-          alt={`Capa do livro: ${book.volumeInfo.title}`}  // Adicionando uma descrição no atributo alt
-          width={300}  // Defina a largura desejada
-          height={520} // Defina a altura desejada
+          alt={`Capa do livro: ${book.volumeInfo.title}`} 
+          width={300} 
+          height={520}
           loading="lazy"
         />
         

@@ -1,20 +1,14 @@
-import { ParsedUrlQuery } from "querystring";
-import { NextParsedUrlQuery } from "next/dist/server/request-meta";
-import { NextRouter } from "next/router";
-
 interface Book {
   accessInfo: {
 
     [key: string]: string | URL | undefined; 
   };
   saleInfo: {
-    [key: string]: string | number;
-    amount: string | number;
+    retailPrice?: {
+      amount: number;
+    };
   };
-  retailPrice: {
-    [key: string]: string | number;
-    amount: string | number;
-  };
+
   id: string;
   volumeInfo: {
     imageLinks: {

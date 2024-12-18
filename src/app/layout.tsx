@@ -89,7 +89,6 @@ export default function RootLayout({
 
         <Script strategy="lazyOnload">
         {`
-        document.addEventListener("DOMContentLoaded", () => {
     const toggleNavbar = (toggleId, navId, bodyId, headerId) => {
 const toggleElement = document.getElementById(toggleId);
  const navElement = document.getElementById(navId);
@@ -137,7 +136,6 @@ navigationLinks.forEach((link) => {
 }
 
  setActiveLink();
-});
 
 
  const navBar = document.getElementById('header')

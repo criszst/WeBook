@@ -1,13 +1,5 @@
 "use client"; 
 
-
-import "../styles/globals.css";
-import "../styles/dropdown.css";
-import "../styles/inputList.css";
-import "../styles/card.css";
-import '../styles/Book/Detail/BackgroundCover.css';
-import '../styles/Book/Detail/BookInfo.css';
-
 import React, { useState, useEffect } from "react";
 import Form from "../../components/Form"
 import BookList from "../../components/BookList";
@@ -17,6 +9,16 @@ import Book from "../../interfaces/IBook";
 import { getBooks } from "../../services/GoogleBookService";
 
 
+import "../styles/globals.css";
+import "../styles/style.css";
+
+import "../styles/sideBar.css";
+import "../styles/dropdown.css";
+import "../styles/inputList.css";
+import "../styles/card.css";
+
+import '../styles/Book/Detail/BackgroundCover.css';
+import '../styles/Book/Detail/BookInfo.css';
 
 
 const Search: React.FC = () => {
