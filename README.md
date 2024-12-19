@@ -23,5 +23,5 @@ I'm not really expecting finish this project in less than 6 months, but'il try
   - TypeScript
   - NodeJs
   - React
-  - EJS
-  - MVC Architecture
+  - NextJS
+  - Tailwind
