@@ -6,7 +6,7 @@ export function AppSidebar() {
     <Sidebar 
       variant="floating" 
       className="z-50"
-      collapsible="offcanvas"
+      collapsible="icon"
     >
       <SidebarContentClient />
     </Sidebar>

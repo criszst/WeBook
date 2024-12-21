@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import Form from "../../components/Form"
-import BookList from "../../components/BookList";
 
+import BookList from "../../components/BookList";
 import Book from "../../interfaces/IBook";
 
 import { getBooks } from "../../services/GoogleBookService";
@@ -16,6 +16,7 @@ import "../styles/card.css";
 
 import '../styles/Book/Detail/BackgroundCover.css';
 import '../styles/Book/Detail/BookInfo.css';
+import { Skeleton } from "@/components/ui/skeleton";
 
 
 const Search: React.FC = () => {
@@ -56,12 +57,15 @@ const Search: React.FC = () => {
         </h1>
 
         {loading ? (
-          <p>Carregando... </p>
+          Array.from({ length: 8 }).map((_, index) => (
+            <BookList book={books[0]} skeleton={true} key={`skeleton-${index}`} />
+          ))
         ) : (
           books.map((book) => (
-            <BookList book={book} key={book.id} />
+            <BookList book={book} skeleton={false} key={book.id} />
           ))
         )}
+      
       </div>
     </section>
   );

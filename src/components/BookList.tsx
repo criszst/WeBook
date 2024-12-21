@@ -4,10 +4,33 @@ import Book from "../interfaces/IBook";
 import Image from 'next/image'
 
 import Link from 'next/link';
+import { Skeleton } from "./ui/skeleton";
 
 
-const BookList: React.FC<{ book: Book; }> = ({ book }) => {
-    return ( 
+const BookList: React.FC<{ book: Book, skeleton: Boolean }> = ({ book, skeleton }) => {
+  if (skeleton) {
+    return (
+      <article className="postcard dark blue">
+        <Skeleton className="postcard__img" style={{ height: "300px", width: "200px" }} />
+        <div className="postcard__text">
+          <Skeleton className="postcard__title blue" style={{ height: "2rem", width: "80%" }} />
+          <Skeleton className="postcard__subtitle small" style={{ height: "1rem", width: "40%" }} />
+          <div className="postcard__bar"></div>
+          <Skeleton className="postcard__preview-txt" style={{ height: "4rem", width: "100%" }} />
+          <ul className="postcard__tagbox">
+            <Skeleton className="tag__item" style={{ height: "2rem", width: "30%" }} />
+            <Skeleton className="tag__item" style={{ height: "2rem", width: "30%" }} />
+            <Skeleton className="tag__item" style={{ height: "2rem", width: "30%" }} />
+          </ul>
+        </div>
+      </article>
+    )
+  }
+
+  if (!book) return null;
+
+    return (
+      
         <article className="postcard dark blue">
                   <a className="postcard__img_link" href={`/details/${book.id}`}>
                   <Image

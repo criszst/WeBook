@@ -8,9 +8,6 @@ import BookList from "../../../components/BookList";
 import Book from "../../../interfaces/IBook";
 
 import "../../styles/style.css";
-import "../../styles/sideBar.css";
-import "../../styles/dropdown.css";
-import "../../styles/inputList.css";
 import "../../styles/card.css";
 import '../../styles/Book/Detail/BackgroundCover.css';
 import '../../styles/Book/Detail/BookInfo.css';
@@ -43,11 +40,14 @@ const BookCategory: React.FC = () => {
         {!loading && books.length === 0 && (
           <p>Nenhum livro encontrado nesta categoria.</p>
         )}
-        {loading ? (
-          <p>Carregando...</p>
+
+         {loading ? (
+          Array.from({ length: 8 }).map((_, index) => (
+            <BookList book={books[0]} skeleton={true} key={`skeleton-${index}`} />
+          ))
         ) : (
           books.map((book) => (
-            <BookList book={book} key={book.id} />
+            <BookList book={book} skeleton={false} key={book.id} />
           ))
         )}
       </div>
