@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from 'next/script';
-import Head from 'next/head';
 
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/SideBar/AppSB"
@@ -30,28 +29,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
+      <script src="http://localhost:8097"></script>
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="Web site created using create-react-app" />
         <title>Book Web</title>
+
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.min.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
-      </Head>
+
+
+      </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <main>
+     
         <SidebarProvider>
+        
           <AppSidebar />
-          
+          <main>
             <SidebarTrigger />
             {children}
-          
+            </main>
         </SidebarProvider>
-        </main>
+        
 
         <footer></footer>
 

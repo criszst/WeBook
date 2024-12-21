@@ -21,11 +21,20 @@ const items = [
 ]
 
 export function SidebarContentClient() {
-    const [hydrated, setHydrated] = useState(false)
-  
+    const [loading, setLoading] = useState(true)
+    const [isMounted, setIsMounted] = useState(false);
+
     useEffect(() => {
-      setHydrated(true)
-    }, [])
+        const timer = setTimeout(() => setLoading(false), 500)
+        setIsMounted(true);
+        return () => clearTimeout(timer)
+ 
+      }, [])
+
+  
+    if (!isMounted) {
+      return null;
+    }
   
     return (
       <SidebarContent>
@@ -35,15 +44,16 @@ export function SidebarContentClient() {
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  {hydrated ? (
+                  {loading ? (
+                    <SidebarMenuSkeleton />
+                  ) : (
                     <SidebarMenuButton asChild>
                       <a href={item.url}>
                         <item.icon />
                         <span>{item.title}</span>
                       </a>
                     </SidebarMenuButton>
-                  ) : (
-                    <SidebarMenuSkeleton />
+                    
                   )}
                 </SidebarMenuItem>
               ))}
