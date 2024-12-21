@@ -13,7 +13,7 @@ import { getBookById } from '../../../services/GoogleBookService';
 
 import "../../styles/globals.css";
 import "../../styles/style.css";
-import "../../styles/sideBar.css";
+
 import "../../styles/dropdown.css";
 import "../../styles/inputList.css";
 
@@ -61,10 +61,8 @@ const BookDetails: React.FC = () => {
                       <Image
                         src={`https://books.google.com/books/publisher/content/images/frontcover/${book.id}?fife=w400-h600&source=gbs_api`}
                         alt="Capa do livro"
-                        layout="responsive"
-                        style={{ objectFit: 'cover' }}
-                        width={300}
-                        height={400}
+                        width={400}
+                        height={500}
                         priority={true}
                       />
                     </figure>

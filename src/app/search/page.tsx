@@ -12,7 +12,6 @@ import { getBooks } from "../../services/GoogleBookService";
 import "../styles/globals.css";
 import "../styles/style.css";
 
-import "../styles/sideBar.css";
 import "../styles/dropdown.css";
 import "../styles/inputList.css";
 import "../styles/card.css";
