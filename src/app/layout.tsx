@@ -4,6 +4,7 @@ import Script from 'next/script';
 
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/SideBar/AppSB"
+import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout";
 
 import './styles/globals.css';
 
@@ -44,16 +45,13 @@ export default function RootLayout({
       </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-     
-        <SidebarProvider>
-        
-          <AppSidebar />
-          <main>
-            <SidebarTrigger />
-            {children}
-            </main>
-        </SidebarProvider>
-        
+        <div>
+
+          <AdminPanelLayout>
+              {children}
+              </AdminPanelLayout>
+        </div>
+
 
         <footer></footer>
 

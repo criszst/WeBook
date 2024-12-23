@@ -11,7 +11,7 @@ const BookList: React.FC<{ book: Book, skeleton: Boolean }> = ({ book, skeleton 
   if (skeleton) {
     return (
       <article className="postcard dark blue">
-        <Skeleton className="postcard__img" style={{ height: "300px", width: "200px" }} />
+        <Skeleton className="postcard__img" style={{ height: "500px" }} />
         <div className="postcard__text">
           <Skeleton className="postcard__title blue" style={{ height: "2rem", width: "80%" }} />
           <Skeleton className="postcard__subtitle small" style={{ height: "1rem", width: "40%" }} />

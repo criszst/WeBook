@@ -13,10 +13,8 @@ import "../styles/globals.css";
 import "../styles/style.css";
 
 import "../styles/card.css";
+import { ContentLayout } from "@/components/admin-panel/content-layout";
 
-import '../styles/Book/Detail/BackgroundCover.css';
-import '../styles/Book/Detail/BookInfo.css';
-import { Skeleton } from "@/components/ui/skeleton";
 
 
 const Search: React.FC = () => {
@@ -49,6 +47,9 @@ const Search: React.FC = () => {
   }, []);
 
   return (
+    <ContentLayout title="Home > Search">
+    
+
     <section className="bg-mainColorBook">
       <Form query={query} />
       <div className="container py-4">
@@ -68,6 +69,7 @@ const Search: React.FC = () => {
       
       </div>
     </section>
+    </ContentLayout>
   );
 };
 

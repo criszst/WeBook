@@ -16,6 +16,7 @@ import "../../styles/style.css";
 
 import '../../styles/Book/Detail/BackgroundCover.css';
 import '../../styles/Book/Detail/BookInfo.css';
+import { ContentLayout } from "@/components/admin-panel/content-layout";
 
 
 
@@ -42,7 +43,7 @@ const BookDetails: React.FC = () => {
     }
 
     return (
-
+<ContentLayout title="Home > Search">
             <section className="container-hero sectionDetail">
               <div className="backgroundCover">
                 <img src={book.volumeInfo.imageLinks.thumbnail} alt="Capa do livro" />
@@ -158,7 +159,7 @@ const BookDetails: React.FC = () => {
                 </div>
               </div>
             </section>
-     
+            </ContentLayout>
     );
 };
 

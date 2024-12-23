@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 
 /* This pen */
- body {
+ .postcard {
 	 font-family: "Baloo 2", cursive;
 	 font-size: 16px;
 	 color: #fff;
@@ -11,7 +11,7 @@
  .light {
 	 background: #f3f5f7;
 }
- a, a:hover {
+ .postcard a, .postcard a:hover {
 	 text-decoration: none;
 	 transition: color 0.3s ease-in-out;
 }
@@ -21,7 +21,7 @@
 	 text-align: center;
 	 font-size: 2.5rem;
 }
-i {
+.postcard i {
   padding: 10px;
 }
 

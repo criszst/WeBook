@@ -42,12 +42,16 @@ const BookCategory: React.FC = () => {
         )}
 
          {loading ? (
+          
           Array.from({ length: 8 }).map((_, index) => (
             <BookList book={books[0]} skeleton={true} key={`skeleton-${index}`} />
           ))
+
         ) : (
+
           books.map((book) => (
             <BookList book={book} skeleton={false} key={book.id} />
+
           ))
         )}
       </div>
