@@ -1,3 +1,5 @@
+// INFO: Menu do usuário
+
 "use client";
 
 import Link from "next/link";

@@ -1,3 +1,5 @@
+// INFO: Botão para abrir e fechar a SideBar
+
 import { ChevronLeft } from "lucide-react";
 
 import { cn } from "@/lib/utils";

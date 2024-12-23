@@ -175,7 +175,7 @@ export function CollapseMenuButton({
             <Link
               className={`cursor-pointer ${
                 ((active === undefined && pathname === href) || active) &&
-                "bg-zinc-100 dark:bg-zinc-800"
+                "bg-secondary"
               }`}
               href={href}
             >

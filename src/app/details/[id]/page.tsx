@@ -13,9 +13,11 @@ import { getBookById } from '../../../services/GoogleBookService';
 
 import "../../styles/globals.css";
 import "../../styles/style.css";
+import "../../styles/card.css";
 
 import '../../styles/Book/Detail/BackgroundCover.css';
 import '../../styles/Book/Detail/BookInfo.css';
+
 import { ContentLayout } from "@/components/admin-panel/content-layout";
 
 

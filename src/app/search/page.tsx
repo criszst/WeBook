@@ -13,6 +13,7 @@ import "../styles/globals.css";
 import "../styles/style.css";
 
 import "../styles/card.css";
+
 import { ContentLayout } from "@/components/admin-panel/content-layout";
 
 

@@ -1,3 +1,5 @@
+// INFO: Titulo da SideBar
+
 import Link from "next/link";
 import { MenuIcon, PanelsTopLeft } from "lucide-react";
 
@@ -26,7 +28,7 @@ export function SheetMenu() {
             variant="link"
             asChild
           >
-            <Link href="/" className="flex items-center gap-2 bg-white">
+            <Link href="/" className="flex items-center gap-2">
               <PanelsTopLeft className="w-6 h-6 mr-1" />
               <SheetTitle className="font-bold text-lg">WeBook</SheetTitle>
             </Link>
