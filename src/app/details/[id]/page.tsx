@@ -11,14 +11,11 @@ import Book from '../../../interfaces/IBook';
 import { getBookById } from '../../../services/GoogleBookService';
 
 
-import "../../styles/globals.css";
-import "../../styles/style.css";
-import "../../styles/card.css";
-
 import '../../styles/Book/Detail/BackgroundCover.css';
 import '../../styles/Book/Detail/BookInfo.css';
 
 import { ContentLayout } from "@/components/admin-panel/content-layout";
+
 
 
 
@@ -45,14 +42,16 @@ const BookDetails: React.FC = () => {
     }
 
     return (
-<ContentLayout title="Home > Search">
-            <section className="container-hero sectionDetail">
+   
+<ContentLayout title={book.volumeInfo.title}>
+ 
+            <section className="container-hero sectionDetail row">
               <div className="backgroundCover">
                 <img src={book.volumeInfo.imageLinks.thumbnail} alt="Capa do livro" />
                 <div className="transparencyEffect"></div>
               </div>
         
-              <div className="headerInfo container row">
+              <div className="headerInfo container col-md-12 ">
 
                 <div className="bookCoverImage col-md-4">
                   <div className="fixedImg">
@@ -161,6 +160,7 @@ const BookDetails: React.FC = () => {
                 </div>
               </div>
             </section>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.min.css"></link >
             </ContentLayout>
     );
 };

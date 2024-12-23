@@ -7,6 +7,8 @@ import { getBookFromCategories } from "../../../services/GoogleBookService";
 import BookList from "../../../components/BookList";
 import Book from "../../../interfaces/IBook";
 
+import { ContentLayout } from "@/components/admin-panel/content-layout";
+
 import "../../styles/style.css";
 import "../../styles/card.css";
 import '../../styles/Book/Detail/BackgroundCover.css';
@@ -32,6 +34,7 @@ const BookCategory: React.FC = () => {
 
   }, [category]);
   return (
+    <ContentLayout title="Categorias">
     <section>
       <div className="container py-4">
         <h1 className="h1 text-center" id="pageHeaderTitle">
@@ -56,6 +59,7 @@ const BookCategory: React.FC = () => {
         )}
       </div>
     </section>
+    </ContentLayout>
   );
 };
 

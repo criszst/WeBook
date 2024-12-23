@@ -48,7 +48,7 @@ const Search: React.FC = () => {
   }, []);
 
   return (
-    <ContentLayout title="Home > Search">
+    <ContentLayout title="Buscar Livros">
     
 
     <section className="bg-mainColorBook">
