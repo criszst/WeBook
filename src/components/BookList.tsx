@@ -31,7 +31,7 @@ const BookList: React.FC<{ book: Book, skeleton: Boolean }> = ({ book, skeleton 
 
     return (
       
-        <article className="postcard dark blue">
+        <article className="postcard dark blue" style={{ padding: "20px", flexGrow: "1", }}>
                   <a className="postcard__img_link" href={`/details/${book.id}`}>
                   <Image
           className="postcard__img"

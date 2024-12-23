@@ -4,7 +4,7 @@ import Script from 'next/script';
 
 // import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 // import { AppSidebar } from "@/components/SideBar/AppSB"
-import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout";
+import AdminPanelLayout from "@/components/SideBar/admin-panel-layout";
 
 import './styles/globals.css';
 import { ThemeProvider } from "next-themes";

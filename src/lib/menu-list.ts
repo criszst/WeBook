@@ -6,7 +6,8 @@ import {
   SquarePen,
   LayoutGrid,
   LucideIcon,
-  Search
+  Search,
+  Book
 } from "lucide-react";
 
 type Submenu = {
@@ -42,7 +43,7 @@ export function getMenuList(pathname: string): Group[] {
       ]
     },
     {
-      groupLabel: "Conteúdos",
+      groupLabel: "Principal",
       menus: [
         // {
         //   href: "",
@@ -59,6 +60,11 @@ export function getMenuList(pathname: string): Group[] {
         //     }
         //   ]
         // },
+        {
+          href: "/library",
+          label: "Biblioteca",
+          icon: Book
+        },
        
         {
           href: "/search",

@@ -7,7 +7,7 @@ import { getBookFromCategories } from "../../../services/GoogleBookService";
 import BookList from "../../../components/BookList";
 import Book from "../../../interfaces/IBook";
 
-import { ContentLayout } from "@/components/admin-panel/content-layout";
+import { ContentLayout } from "@/components/SideBar/content-layout";
 
 import "../../styles/style.css";
 import "../../styles/card.css";

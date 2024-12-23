@@ -14,8 +14,7 @@ import { getBookById } from '../../../services/GoogleBookService';
 import '../../styles/Book/Detail/BackgroundCover.css';
 import '../../styles/Book/Detail/BookInfo.css';
 
-import { ContentLayout } from "@/components/admin-panel/content-layout";
-
+import { ContentLayout } from "@/components/SideBar/content-layout";
 
 
 

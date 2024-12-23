@@ -9,12 +9,11 @@ import Book from "../../interfaces/IBook";
 import { getBooks } from "../../services/GoogleBookService";
 
 
-import "../styles/globals.css";
 import "../styles/style.css";
-
 import "../styles/card.css";
 
-import { ContentLayout } from "@/components/admin-panel/content-layout";
+import { ContentLayout } from "@/components/SideBar/content-layout";
+
 
 
 
@@ -48,12 +47,11 @@ const Search: React.FC = () => {
   }, []);
 
   return (
-    <ContentLayout title="Buscar Livros">
-    
+    <ContentLayout title="Busca">
 
     <section className="bg-mainColorBook">
       <Form query={query} />
-      <div className="container py-4">
+      <div className="container py-2">
         <h1 className="h1 text-center" id="pageHeaderTitle">
           {query === "" ? "Insira um livro para pesquisar" : query}
         </h1>

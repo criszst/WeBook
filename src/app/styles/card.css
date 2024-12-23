@@ -3,13 +3,29 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 
 /* This pen */
- .postcard {
-	 font-family: "Baloo 2", cursive;
-	 font-size: 16px;
-	 color: #fff;
-	 text-rendering: optimizeLegibility;
-	 font-weight: initial;
+/* Cards */
+.postcard {
+	flex-grow: 1;
+	padding: 0 1rem;
+ 	margin: 10px 20px 30px 50px;
+
+	box-shadow: 0 6px 15px 0 rgba( 31, 38, 135, 0.37 );
+	color: #fff;
+	
+	border-radius: 10px;
+
+	flex-wrap: wrap;
+	display: flex;
+
+	overflow: hidden;
+	position: relative;
+
+	font-family: "Baloo 2", cursive;
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+	font-weight: initial;
 }
+
  .light {
 	 background: #f3f5f7;
 }
@@ -27,20 +43,6 @@
   padding: 10px;
 }
 
-/* Cards */
- .postcard {
-	 flex-wrap: wrap;
-	 display: flex;
-	 box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-	 border-radius: 10px;
-	 margin: 0 0 2rem 0;
-	 overflow: hidden;
-	 position: relative;
-	 color: #fff;
-
-  box-shadow: 0 6px 15px 0 rgba( 31, 38, 135, 0.37 );
-
-}
  .postcard.dark {
 	 background-color: #18151f;
 }
@@ -74,7 +76,7 @@
 	 display: contents;
 }
  .postcard .postcard__bar {
-	 width: 50px;
+	 width: 10%;
 	 height: 10px;
 	 margin: 10px 0;
 	 border-radius: 5px;
@@ -126,7 +128,7 @@
 	 border-radius: 10px;
 }
  .postcard:hover .postcard__bar {
-	 width: 100px;
+	 width: 60%;
 }
  @media screen and (min-width: 769px) {
 	 .postcard {
