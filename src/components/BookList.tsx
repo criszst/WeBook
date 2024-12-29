@@ -31,11 +31,11 @@ const BookList: React.FC<{ book: Book, skeleton: Boolean }> = ({ book, skeleton 
 
     return (
       
-        <article className="postcard dark blue" style={{ padding: "20px", flexGrow: "1", }}>
+        <article className="postcard dark blue" style={{ padding: "20px",  }}>
                   <a className="postcard__img_link" href={`/details/${book.id}`}>
                   <Image
           className="postcard__img"
-          style={{ maxHeight: "100%" }}
+          style={{ maxHeight: "60%" }}
           src={`https://books.google.com/books/publisher/content/images/frontcover/${book.id}?fife=w400-h600&source=gbs_api`}
           alt={`Capa do livro: ${book.volumeInfo.title}`} 
           width={300} 
@@ -61,7 +61,7 @@ const BookList: React.FC<{ book: Book, skeleton: Boolean }> = ({ book, skeleton 
                     <div className="postcard__bar"></div>
 
                     <div className="postcard__preview-txt" style={{ fontSize: "14px" }}>
-                      {book.volumeInfo.description || book.searchInfo.textSnippet}
+                      {book.searchInfo.textSnippet || book.volumeInfo.description}
                     </div>
 
                     <ul className="postcard__tagbox">

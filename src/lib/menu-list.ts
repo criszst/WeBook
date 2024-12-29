@@ -73,7 +73,7 @@ export function getMenuList(pathname: string): Group[] {
         },
         {
           href: "/categories",
-          label: "Categories",
+          label: "Categorias",
           icon: Bookmark
         },
       ]

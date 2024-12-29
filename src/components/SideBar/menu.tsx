@@ -1,4 +1,4 @@
-// INFO: Menu lateral do user que contem "DashBoard" e "Conta"
+// INFO: Menu lateral do user que contem "DashBoard", "Conta" e botão de Sign Out/Sair
 
 "use client";
 
@@ -133,7 +133,7 @@ export function Menu({ isOpen }: MenuProps) {
                         isOpen === false ? "opacity-0 hidden" : "opacity-100"
                       )}
                     >
-                      Sign out
+                      Sair
                     </p>
                   </Button>
                 </TooltipTrigger>
