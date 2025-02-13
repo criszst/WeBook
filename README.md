@@ -13,6 +13,8 @@
 I doing this site for hobby and study about TypeScript and its uses.
 I'm not really expecting finish this project in less than 6 months, but'il try i think..
 
+update after 2 months: i forgot that my vacation was ending too 💔
+
 ## OBJECTIVES
   - Finish the home page (home page has just a h1, for god sake.......)
   - Finish the Book Detail page
